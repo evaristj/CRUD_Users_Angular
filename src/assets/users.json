@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "username": "jdoe",
+      "firstSurname": "Doe",
+      "secondSurname": "Smith",
+      "nif": "45698764H",
+      "gender": "Male",
+      "adrress": "123 Main St",
+      "number": "10",
+      "door": "A",
+      "postalCode": "12345",
+      "city": "Townsville",
+      "nameSchool": "Townsville High",
+      "studies": "Computer Science",
+      "dateStudies": "2020-06-15"
+    },
+    {
+      "id": 2,
+      "username": "asmith",
+      "firstSurname": "Smith",
+      "secondSurname": "Johnson",
+      "nif": "45698874F",
+      "gender": "Female",
+      "adrress": "456 Elm St",
+      "number": "20",
+      "door": "B",
+      "postalCode": "67890",
+      "city": "Cityville",
+      "nameSchool": "Cityville University",
+      "studies": "Mathematics",
+      "dateStudies": "2018-05-20"
+    },
+    {
+      "id": 3,
+      "username": "bwilliams",
+      "firstSurname": "Williams",
+      "secondSurname": "Brown",
+      "nif": "45698654Y",
+      "gender": "Non-binary",
+      "adrress": "789 Oak St",
+      "number": "30",
+      "door": "C",
+      "postalCode": "10112",
+      "city": "Villagetown",
+      "nameSchool": "Villagetown College",
+      "studies": "Physics",
+      "dateStudies": "2019-07-10"
+    }
+  ]
+  

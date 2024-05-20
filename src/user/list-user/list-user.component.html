@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>User List</h2>
+
+  <button routerLink="/new-user" (click)="addUser()" class="btn btn-primary mb-3">Add New User</button>
+
+  <div class="user-list">
+    <div class="user-item" *ngFor="let user of users">
+      <div class="user-details">
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>First Surname:</strong> {{ user.firstSurname }}</p>
+        <p><strong>Second Surname:</strong> {{ user.secondSurname }}</p>
+        <p><strong>NIF:</strong> {{ user.nif }}</p>
+        <p><strong>Gender:</strong> {{ user.gender }}</p>
+        <p><strong>Address:</strong> {{ user.adrress }}</p>
+        <p><strong>Number:</strong> {{ user.number }}</p>
+        <p><strong>Door:</strong> {{ user.door }}</p>
+        <p><strong>Postal Code:</strong> {{ user.postalCode }}</p>
+        <p><strong>City:</strong> {{ user.city }}</p>
+        <p><strong>School:</strong> {{ user.nameSchool }}</p>
+        <p><strong>Studies:</strong> {{ user.studies }}</p>
+        <p><strong>Date of Studies:</strong> {{ user.dateStudies }}</p>
+      </div>
+      <div class="user-actions">
+        <button (click)="editUser(user.id)" class="btn btn-primary">Edit</button>
+        <button (click)="deleteUser(user.id)" class="btn btn-danger">Delete</button>
+        <button (click)="viewDetails(user.id)" class="btn btn-secondary">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="container">
+  <h2>Add New User</h2>
+  <form (ngSubmit)="addUser()" #userForm="ngForm">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" required [(ngModel)]="user.username" name="username">
+    </div>
+    <div class="form-group">
+      <label for="firstSurname">First Surname</label>
+      <input type="text" class="form-control" id="firstSurname" required [(ngModel)]="user.firstSurname" name="firstSurname">
+    </div>
+    <div class="form-group">
+      <label for="secondSurname">Second Surname</label>
+      <input type="text" class="form-control" id="secondSurname" required [(ngModel)]="user.secondSurname" name="secondSurname">
+    </div>
+    <div class="form-group">
+      <label for="nif">NIF</label>
+      <input type="text" class="form-control" id="nif" required [(ngModel)]="user.nif" name="nif">
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <input type="text" class="form-control" id="gender" [(ngModel)]="user.gender" name="gender">
+    </div>
+    <div class="form-group">
+      <label for="adrress">Address</label>
+      <input type="text" class="form-control" id="adrress" [(ngModel)]="user.adrress" name="adrress">
+    </div>
+    <div class="form-group">
+      <label for="number">Number</label>
+      <input type="text" class="form-control" id="number" [(ngModel)]="user.number" name="number">
+    </div>
+    <div class="form-group">
+      <label for="door">Door</label>
+      <input type="text" class="form-control" id="door" [(ngModel)]="user.door" name="door">
+    </div>
+    <div class="form-group">
+      <label for="postalCode">Postal Code</label>
+      <input type="text" class="form-control" id="postalCode" [(ngModel)]="user.postalCode" name="postalCode">
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" [(ngModel)]="user.city" name="city">
+    </div>
+    <div class="form-group">
+      <label for="nameSchool">School Name</label>
+      <input type="text" class="form-control" id="nameSchool" [(ngModel)]="user.nameSchool" name="nameSchool">
+    </div>
+    <div class="form-group">
+      <label for="studies">Studies</label>
+      <input type="text" class="form-control" id="studies" [(ngModel)]="user.studies" name="studies">
+    </div>
+    <div class="form-group">
+      <label for="dateStudies">Date of Studies</label>
+      <input type="date" class="form-control" id="dateStudies" [(ngModel)]="user.dateStudies" name="dateStudies">
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">Add User</button>
+  </form>
+</div>
